@@ -3,7 +3,7 @@ package internal
 import (
 	"strings"
 
-	"github.com/goplus/llpkgstore/config"
+	"github.com/luoliwoshang/llpkgstore/config"
 	"github.com/spf13/cobra"
 )
 

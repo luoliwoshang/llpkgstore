@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/goplus/llpkgstore/internal/actions/file"
-	"github.com/goplus/llpkgstore/internal/actions/pc"
-	"github.com/goplus/llpkgstore/internal/cmdbuilder"
-	"github.com/goplus/llpkgstore/upstream"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/file"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/pc"
+	"github.com/luoliwoshang/llpkgstore/internal/cmdbuilder"
+	"github.com/luoliwoshang/llpkgstore/upstream"
 )
 
 var (

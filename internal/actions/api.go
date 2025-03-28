@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/google/go-github/v69/github"
-	"github.com/goplus/llpkgstore/config"
-	"github.com/goplus/llpkgstore/internal/actions/file"
-	"github.com/goplus/llpkgstore/internal/actions/pc"
-	"github.com/goplus/llpkgstore/internal/actions/versions"
+	"github.com/luoliwoshang/llpkgstore/config"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/file"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/pc"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/versions"
 )
 
 const (

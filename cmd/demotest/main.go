@@ -1,6 +1,6 @@
 package main
 
-import cmd "github.com/goplus/llpkgstore/cmd/demotest/internal"
+import cmd "github.com/luoliwoshang/llpkgstore/cmd/demotest/internal"
 
 func main() {
 	cmd.Execute()

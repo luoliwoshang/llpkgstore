@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/goplus/llpkgstore/internal/actions/file"
-	"github.com/goplus/llpkgstore/internal/actions/generator"
-	"github.com/goplus/llpkgstore/internal/actions/hashutils"
-	"github.com/goplus/llpkgstore/internal/actions/pc"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/file"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/generator"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/hashutils"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/pc"
 )
 
 var (
@@ -27,7 +27,7 @@ var (
 
 const (
 	// default llpkg repo
-	goplusRepo = "github.com/goplus/llpkg/"
+	goplusRepo = "github.com/luoliwoshang/goplus-llpkg/"
 	// llcppg running default version
 	llcppgGoVersion = "1.20.14"
 	// llcppg default config file, which MUST exist in specifed dir
@@ -47,7 +47,7 @@ func canHash(fileName string) bool {
 // lockGoVersion locks current Go version to `llcppgGoVersion` via GOTOOLCHAIN
 func lockGoVersion(cmd *exec.Cmd, pcPath string) {
 	// don't change global settings, use temporary environment.
-	// see issue: https://github.com/goplus/llpkgstore/issues/18
+	// see issue: https://github.com/luoliwoshang/llpkgstore/issues/18
 	pc.SetPath(cmd, pcPath)
 	cmd.Env = append(cmd.Env, fmt.Sprintf("GOTOOLCHAIN=go%s", llcppgGoVersion))
 }
@@ -75,7 +75,7 @@ func New(dir, packageName, pcDir string) generator.Generator {
 }
 
 // normalizeModulePath returns a normalized module path like
-// cjson => github.com/goplus/llpkg/cjson
+// cjson => github.com/luoliwoshang/goplus-llpkg/cjson
 func (l *llcppgGenerator) normalizeModulePath() string {
 	return goplusRepo + l.packageName
 }

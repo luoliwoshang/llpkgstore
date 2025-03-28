@@ -13,8 +13,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/goplus/llpkgstore/config"
-	"github.com/goplus/llpkgstore/internal/actions/versions"
+	"github.com/luoliwoshang/llpkgstore/config"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/versions"
 	"golang.org/x/mod/semver"
 )
 
@@ -188,7 +188,7 @@ func checkLegacyVersion(ver *versions.Versions, cfg config.LLPkgConfig, mappedVe
 	if semver.MajorMinor(previousVersion) == semver.MajorMinor(currentVersion) &&
 		semver.Compare(previousVersion, currentVersion) > 0 {
 		panic(`cannot submit a historical legacy version.
-	for more details: https://github.com/goplus/llpkgstore/blob/main/docs/llpkgstore.md#branch-maintenance-strategy`)
+	for more details: https://github.com/luoliwoshang/llpkgstore/blob/main/docs/llpkgstore.md#branch-maintenance-strategy`)
 	}
 
 	// case5: we're the latest patch version for current major and minor, check the mapped version
@@ -244,7 +244,7 @@ func Changes() []string {
 
 // Repository returns owner and repository name for the current repository
 //
-// Example: goplus/llpkg, owner: goplus, repo: llpkg
+// Example: luoliwoshang/goplus-llpkg, owner: goplus, repo: llpkg
 // Repository extracts GitHub repository owner and name from GITHUB_REPOSITORY
 func Repository() (owner, repo string) {
 	thisRepo := os.Getenv("GITHUB_REPOSITORY")

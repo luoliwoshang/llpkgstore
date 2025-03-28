@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/goplus/llpkgstore/config"
-	"github.com/goplus/llpkgstore/internal/actions/hashutils"
+	"github.com/luoliwoshang/llpkgstore/config"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/hashutils"
 	"golang.org/x/mod/modfile"
 )
 

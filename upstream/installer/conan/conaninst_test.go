@@ -9,8 +9,8 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/goplus/llpkgstore/internal/actions/pc"
-	"github.com/goplus/llpkgstore/upstream"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/pc"
+	"github.com/luoliwoshang/llpkgstore/upstream"
 )
 
 func TestConanInstaller(t *testing.T) {
@@ -47,7 +47,7 @@ func TestConanInstaller(t *testing.T) {
 	}
 }
 
-// https://github.com/goplus/llpkgstore/issues/19
+// https://github.com/luoliwoshang/llpkgstore/issues/19
 func TestConanIssue19(t *testing.T) {
 	c := &conanInstaller{
 		config: map[string]string{},

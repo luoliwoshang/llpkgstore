@@ -21,7 +21,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/goplus/llpkgstore/internal/actions/pc"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/pc"
 )
 
 func RunGenPkgDemo(demoRoot string) {

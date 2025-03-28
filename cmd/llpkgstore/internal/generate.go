@@ -6,10 +6,10 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/goplus/llpkgstore/config"
-	"github.com/goplus/llpkgstore/internal/actions/file"
-	"github.com/goplus/llpkgstore/internal/actions/generator/llcppg"
-	"github.com/goplus/llpkgstore/internal/actions/pc"
+	"github.com/luoliwoshang/llpkgstore/config"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/file"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/generator/llcppg"
+	"github.com/luoliwoshang/llpkgstore/internal/actions/pc"
 	"github.com/spf13/cobra"
 )
 
